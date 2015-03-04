@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block header %}<span><a href="/add">ADD PAGE</a></span>{% endblock %}
+
+{% block page-title %}{{page.title}}{% endblock %}
+
+{% block content %}
+	{{page.body|marked}}
+{% endblock %}
